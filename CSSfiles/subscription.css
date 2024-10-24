@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    position: relative;
+    background: linear-gradient(135deg, var(--color-primary) 50%, var(--color-background) 50%);
+    /* Background gradient applied */
+}
+
+/* Optional: If you want a different background for dark theme */
+.dark-theme body {
+    background: linear-gradient(135deg, #edeffd 50%, #181a1e 50%);
+}
+
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.pricing-section p {
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card ul li {
+    padding: 5px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.card ul li::before {
+    content: "✔";
+    color: rgb(55, 71, 162);
+    margin-right: 8px;
+}
+
+/* Swiper Styles */
+.swiper {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height, adjust if needed */
+    overflow: hidden; /* Hide vertical overflow */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center slides vertically */
+}
+
+/* Wrapper to ensure slides are displayed inline */
+.swiper-wrapper {
+    display: flex; /* Align slides horizontally */
+    width: 100%; /* Full width of the swiper container */
+    height: 100%; /* Full height of the swiper container */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    scroll-snap-type: x mandatory; /* Smooth scrolling effect */
+}
+
+/* Individual swiper slides */
+.swiper-slide {
+    flex: 0 0 auto; /* Prevent shrinking and ensure proper width */
+    width: 250px; /* Set fixed width for smaller grid */
+    height: 300px; /* Set fixed height for smaller grid, adjust as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    scroll-snap-align: center; /* Center align the slide in the viewport */
+    background-color: var(--color-white); /* Card background color */
+    margin: 0 10px; /* Space between slides, adjust as needed */
+    padding: 1rem; /* Card padding */
+    border-radius: 1rem; /* Card border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for swiper slides */
+.swiper-slide:hover {
+    transform: scale(1.05); /* Slightly zoom in */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Scrollbar customization for WebKit browsers (Chrome, Safari) */
+.swiper-wrapper::-webkit-scrollbar {
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+.swiper-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.swiper-wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.swiper-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* Scrollbar for Firefox */
+.swiper-wrapper {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}

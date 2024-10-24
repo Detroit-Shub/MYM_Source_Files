@@ -1,0 +1,16 @@
+.background{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(to right top, #536DFE 50%, #F4F4F4 50%);
+    
+}
+.h1{
+    position: relative;
+    text-align: center;
+}

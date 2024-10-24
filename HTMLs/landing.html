@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Platform</title>
+    <link rel="stylesheet" href="/CSSfiles/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>MYM</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-dropdown">
+            
+            <button class="auth-button">Signup/Login</button>
+            <div class="auth-dropdown-content">
+                <div class="auth-section">
+                    <h4>Login</h4>
+                    <a href="/HTMLs/login.html" onclick="openLoginModal('student')">As Student</a>
+                    <a href="/HTMLs/login.html" onclick="openLoginModal('mentor')">As Mentor</a>
+                </div>
+                <div class="auth-section">
+                    <h4>Signup</h4>
+                    <a href="/HTMLs/login.html" onclick="openSignupModal('student')">As Student</a>
+                    <a href="/HTMLs/login.html" onclick="openSignupModal('mentor')">As Mentor</a>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- Landing Page -->
+    <header id="home" class="landing-page hero">
+        <div class="landing-content hero-content">
+            <h2>Welcome to the Mentorship Platform</h2>
+            <p>Boost your career by getting guidance from professionals in your field. Sign up today and start your journey!</p>
+            <a href="/HTMLs/login.html">
+                <button onclick="openSignupModal()" class="btn-primary">Join Now</button>
+            </a>
+            
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We provide a platform that connects students with mentors from various industries.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="feature">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Easy Scheduling</h3>
+            <p>Seamlessly schedule your sessions with our integrated Calendly support.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-video"></i>
+            <h3>Video Calls</h3>
+            <p>Connect with mentors through secure and reliable video calls.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-comments"></i>
+            <h3>Real-Time Chat</h3>
+            <p>Engage in live text-based conversations during your sessions.</p>
+        </div>
+    </section>
+
+      <!-- Testimonials-section -->
+    <div class="testimonials-section">
+        <h2>What Our Users Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"This platform has completely transformed the way I connect with mentors. The user experience is fantastic, and I've learned so much!"</p>
+                <h3>- John Doe, Student</h3>
+            </div>
+            <div class="testimonial">
+                <p>"As a mentor, I find the platform incredibly intuitive and easy to use. It allows me to help students without any hassle."</p>
+                <h3>- Jane Smith, Mentor</h3>
+            </div>
+            <div class="testimonial">
+                <p>"The features offered by this platform are top-notch. It's easy to schedule sessions and the video chat functionality is seamless."</p>
+                <h3>- Emily Johnson, Student</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: support@mentorshipplatform.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>

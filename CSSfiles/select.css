@@ -1,0 +1,72 @@
+.background {
+    display: flex;
+    position: fixed;
+    left:0;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: linear-gradient(to right bottom, #536DFE 50%, #F4F4F4 50%);
+}
+.head{
+    background-color: #536DFE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    padding-bottom:20px ;
+    padding-left: 30px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left:0
+    
+}
+.row1{
+    position:absolute;
+    top:150px;
+    
+}
+
+a{
+    display: inline-block;
+    width: 150px; 
+    height:150px;
+    padding:25px;
+    margin-left: 50px;
+    margin-right:50px ;
+    /* background-color: blue; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    
+}
+.row1 a:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s;
+}
+.row1 a:hover,
+.row1 a.active {
+    background-color: black;
+    color: #1a73e8;
+}
+#education{
+    background-image: url("/PICS/education.png");
+    background-size: contain;
+}
+#gender{
+    background-image: url("/PICS/gender.png");
+    background-size: cover;
+}
+#growth{
+    background-image: url("/PICS/growth.png");
+    background-size: cover;
+}
+#Industry{
+    background-image: url("/PICS/Industry.png");
+    background-size: cover;
+}
+#Inequalities{
+    background-image: url("/PICS/inqualities.png");
+    background-size: cover;
+}
